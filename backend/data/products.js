@@ -5,7 +5,7 @@ const products = [
     category: 'psychedelic',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ante quis lorem lacinia sollicitudin. Mauris scelerisque efficitur nunc, eu volutpat mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam odio nisl, accumsan ut neque et, convallis dignissim eros.',
-    image: '/img/image.jpg',
+    image: '/img/image1.png',
     price: 50,
     countInStock: 3,
   },
@@ -15,7 +15,7 @@ const products = [
     category: 'noveau',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ante quis lorem lacinia sollicitudin. Mauris scelerisque efficitur nunc, eu volutpat mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam odio nisl, accumsan ut neque et, convallis dignissim eros.',
-    image: '/img/image.jpg',
+    image: '/img/image2.png',
     price: 40,
     countInStock: 4,
   },
@@ -25,7 +25,7 @@ const products = [
     category: 'comics',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ante quis lorem lacinia sollicitudin. Mauris scelerisque efficitur nunc, eu volutpat mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam odio nisl, accumsan ut neque et, convallis dignissim eros.',
-    image: '/img/image.jpg',
+    image: '/img/image3.png',
     price: 20,
     countInStock: 2,
   },
@@ -35,7 +35,7 @@ const products = [
     category: 'space',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ante quis lorem lacinia sollicitudin. Mauris scelerisque efficitur nunc, eu volutpat mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam odio nisl, accumsan ut neque et, convallis dignissim eros.',
-    image: '/img/image.jpg',
+    image: '/img/image4.png',
     price: 80,
     countInStock: 2,
   },
@@ -45,7 +45,7 @@ const products = [
     category: 'nature',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ante quis lorem lacinia sollicitudin. Mauris scelerisque efficitur nunc, eu volutpat mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam odio nisl, accumsan ut neque et, convallis dignissim eros.',
-    image: '/img/image.jpg',
+    image: '/img/image5.png',
     price: 50,
     countInStock: 4,
   },
@@ -55,7 +55,7 @@ const products = [
     category: 'abstract',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ante quis lorem lacinia sollicitudin. Mauris scelerisque efficitur nunc, eu volutpat mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam odio nisl, accumsan ut neque et, convallis dignissim eros.',
-    image: '/img/image.jpg',
+    image: '/img/image6.png',
     price: 30,
     countInStock: 1,
   },
