@@ -39,6 +39,7 @@ const PlaceOrderScreen = ({ history }) => {
   }, [history, success, order])
 
   const placeOrderHandler = () => {
+    
     dispatch(
       createOrder({
         orderItems: cart.cartItems,
@@ -86,14 +87,14 @@ const PlaceOrderScreen = ({ history }) => {
                         <Col md={1}>
                           <Image
                             src={item.image}
-                            alt={item.name}
+                            alt={item.title}
                             fluid
                             rounded
                           />
                         </Col>
                         <Col>
                           <Link to={`/product/${item.product}`}>
-                            {item.name}
+                            {item.title}
                           </Link>
                         </Col>
                         <Col md={4}>
@@ -153,6 +154,7 @@ const PlaceOrderScreen = ({ history }) => {
           </Card>
         </Col>
       </Row>
+      
     </>
   )
 }

@@ -48,7 +48,7 @@ const OrderScreen = ({ match, history }) => {
 
   useEffect(() => {
     if (!userInfo) {
-      history.pushState('/login')
+      history.push('/login')
     }
   })
 
@@ -146,14 +146,14 @@ const OrderScreen = ({ match, history }) => {
                         <Col md={1}>
                           <Image
                             src={item.image}
-                            alt={item.name}
+                            alt={item.title}
                             fluid
                             rounded
                           />
                         </Col>
                         <Col>
                           <Link to={`/product/${item.product}`}>
-                            {item.name}
+                            {item.title}
                           </Link>
                         </Col>
                         <Col md={4}>

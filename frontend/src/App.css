@@ -4,8 +4,12 @@
   font-family: 'Source Code Pro', monospace;
 }
 
+a {
+  color: #03cfbe;
+}
+
 a:hover {
-  color: rgb(86, 214, 0);
+  color: rgb(234, 0, 255);
   text-decoration: none;
 }
 
@@ -14,5 +18,9 @@ a:hover {
   font-size: 1.6rem;
 }
 .logo:hover {
-  color: rgb(86, 214, 0);
+  color: rgb(234, 0, 255);
+}
+
+.navibar {
+  background-color: #8a3cff;
 }

@@ -53,7 +53,7 @@ const LoginScreen = ({ location, history }) => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}></Form.Control>
           </Form.Group>
-          <Button type='submit' variant='primary'>
+          <Button type='submit' variant='info'>
             Sign In
           </Button>
         </Form>

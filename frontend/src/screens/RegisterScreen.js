@@ -81,7 +81,7 @@ const RegisterScreen = ({ location, history }) => {
                 setConfirmPassword(e.target.value)
               }></Form.Control>
           </Form.Group>
-          <Button type='submit' variant='primary'>
+          <Button type='submit' variant='info'>
             Register
           </Button>
         </Form>
