@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
 import Loader from '../components/Loader'
 import Meta from '../components/Meta'
+import Rating from '../components/Rating'
 import Message from '../components/Message'
 import {
   listProductDetails,
@@ -86,6 +87,8 @@ const ProductScreen = ({ history, match }) => {
                 {/* <ListGroup.Item>{product.category}</ListGroup.Item> */}
                 <ListGroup.Item className='text-left'><h5>Details</h5></ListGroup.Item>
                 <ListGroup.Item>{product.description}</ListGroup.Item>
+                <ListGroup.Item className='text-left'><h5>Medium</h5></ListGroup.Item>
+                <ListGroup.Item>{product.medium}</ListGroup.Item>
               </ListGroup>
             </Col>
             <Col>
@@ -143,7 +146,7 @@ const ProductScreen = ({ history, match }) => {
               </Card>
             </Col>
           </Row>
-          {/* <Row>
+          <Row>
             <Col md={6}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
@@ -199,7 +202,7 @@ const ProductScreen = ({ history, match }) => {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
-          </Row> */}
+          </Row>
         </>
       )}
     </>
