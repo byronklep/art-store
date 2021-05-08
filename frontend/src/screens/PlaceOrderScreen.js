@@ -5,11 +5,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import CheckoutSteps from '../components/CheckoutSteps'
 import { createOrder } from '../actions/orderActions'
+import { removeFromCart } from '../actions/cartActions'
 
 const PlaceOrderScreen = ({ history }) => {
   const dispatch = useDispatch()
 
   const cart = useSelector((state) => state.cart)
+
+  console.log(cart.cartItems)
 
   //   Calculate prices
   const addDecimals = (num) => {
@@ -30,6 +33,7 @@ const PlaceOrderScreen = ({ history }) => {
   const orderCreate = useSelector((state) => state.orderCreate)
   const { order, success, error } = orderCreate
 
+
   useEffect(() => {
     if (success) {
       history.push(`/order/${order._id}`)
@@ -39,6 +43,7 @@ const PlaceOrderScreen = ({ history }) => {
   }, [history, success, order])
 
   const placeOrderHandler = () => {
+    let keysToRemove = ["cartItems", "shippingAddress", "paymentMethod"];
     
     dispatch(
       createOrder({
@@ -49,7 +54,10 @@ const PlaceOrderScreen = ({ history }) => {
         shippingPrice: cart.shippingPrice,
         taxPrice: cart.taxPrice,
         totalPrice: cart.totalPrice,
-      })
+      },  keysToRemove.forEach(k =>
+        localStorage.removeItem(k))
+    )
+      
     )
   }
 

@@ -17,14 +17,13 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar  className='navibar' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar  bg='primary' variant='light' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
               <span className='logo'>Art Store</span>
             </Navbar.Brand>
           </LinkContainer>
-
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Route render={({ history }) => <SearchBox history={history} />} />
@@ -67,6 +66,7 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      
     </header>
   )
 }

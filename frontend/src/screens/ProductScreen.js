@@ -56,40 +56,41 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link className='btn btn-light my-3' to='/'>
+      <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
       {loading ? (
         <Loader />
       ) : error ? (
-        <Message variant='danger'>{error}</Message>
+        <Message variant="danger">{error}</Message>
       ) : (
         <>
           <Meta title={product.title} />
-          <Row>
+          <Row className="justify-content-lg-center">
             <Col md={6}>
+              <h1 className="text-center">{product.title}</h1>
               <Image src={product.image} alt={product.name} fluid />
             </Col>
-            <Col md={3}>
-              <ListGroup variant='flush text-center'>
-                <ListGroup.Item>
-                  <h3>{product.title}</h3>
-                </ListGroup.Item>
-                {product.subtitle ? (
+          </Row>
+          <Row className="mt-5">
+            <Col md={8}>
+              <ListGroup variant="flush text-center">
+                {/* {product.subtitle ? (
                   <ListGroup.Item>
                     <h5>{product.subtitle}</h5>
                   </ListGroup.Item>
                 ) : (
                   ''
-                )}
+                )} */}
 
-                <ListGroup.Item>{product.category}</ListGroup.Item>
+                {/* <ListGroup.Item>{product.category}</ListGroup.Item> */}
+                <ListGroup.Item className='text-left'><h5>Details</h5></ListGroup.Item>
                 <ListGroup.Item>{product.description}</ListGroup.Item>
               </ListGroup>
             </Col>
-            <Col md={3}>
+            <Col>
               <Card>
-                <ListGroup variant='flush'>
+                <ListGroup variant="flush">
                   <ListGroup.Item>
                     <Row>
                       <Col>Price:</Col>
@@ -113,7 +114,7 @@ const ProductScreen = ({ history, match }) => {
                         <Row>Qty</Row>
                         <Row>
                           <Form.Control
-                            as='select'
+                            as="select"
                             value={qty}
                             onChange={(e) => setQty(e.target.value)}>
                             {[...Array(product.countInStock).keys()].map(
@@ -132,8 +133,8 @@ const ProductScreen = ({ history, match }) => {
                   <ListGroup.Item>
                     <Button
                       onClick={addToCartHandler}
-                      className='btn-block'
-                      type='button'
+                      className="btn-block"
+                      type="button"
                       disabled={product.countInStock === 0}>
                       Add To Cart
                     </Button>

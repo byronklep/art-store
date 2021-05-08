@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Moment from 'react-moment';
 import { PayPalButton } from 'react-paypal-button-v2'
 import { Link } from 'react-router-dom'
 import { Row, Col, ListGroup, Image, Card, Button } from 'react-bootstrap'
@@ -114,7 +115,7 @@ const OrderScreen = ({ match, history }) => {
               </p>
               {order.isDelivered ? (
                 <Message variant='success'>
-                  Delivered on {order.deliveredAt}
+                  Delivered on <Moment format="MM/DD/YYYY">{order.deliveredAt}</Moment>
                 </Message>
               ) : (
                 <Message variant='danger'>Not Delivered</Message>
@@ -128,7 +129,7 @@ const OrderScreen = ({ match, history }) => {
                 {order.paymentMethod}
               </p>
               {order.isPaid ? (
-                <Message variant='success'>Paid on {order.paidAt}</Message>
+                <Message variant='success'>Paid on  <Moment format="MM/DD/YYYY">{order.paidAt}</Moment></Message>
               ) : (
                 <Message variant='danger'>Not Paid</Message>
               )}

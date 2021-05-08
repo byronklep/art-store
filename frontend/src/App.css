@@ -21,6 +21,7 @@ a:hover {
   color: rgb(234, 0, 255);
 }
 
-.navibar {
-  background-color: #8a3cff;
+
+.card {
+  border: none;
 }
