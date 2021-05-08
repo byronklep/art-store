@@ -72,8 +72,9 @@ const ProductScreen = ({ history, match }) => {
           <Row className="justify-content-lg-center">
             <Col md={6}>
               <h1 className="text-center">{product.title}</h1>
+              <hr className='divider' />
               <SRLWrapper>
-                <Image src={product.image} alt={product.title} fluid />
+                <Image className='lightbox' src={product.image} alt={product.title} fluid />
               </SRLWrapper>
             </Col>
           </Row>
