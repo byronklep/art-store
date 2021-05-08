@@ -88,6 +88,7 @@ const ProductScreen = ({ history, match }) => {
                 {/* <ListGroup.Item>{product.category}</ListGroup.Item> */}
                 <ListGroup.Item className='text-left'><h5>Details</h5></ListGroup.Item>
                 <ListGroup.Item>{product.description}</ListGroup.Item>
+                <ListGroup.Item>{product.dimensions}</ListGroup.Item>
                 <ListGroup.Item className='text-left'><h5>Medium</h5></ListGroup.Item>
                 <ListGroup.Item>{product.medium}</ListGroup.Item>
               </ListGroup>
