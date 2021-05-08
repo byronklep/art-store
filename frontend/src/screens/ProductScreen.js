@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Moment from 'react-moment'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
@@ -146,8 +147,8 @@ const ProductScreen = ({ history, match }) => {
               </Card>
             </Col>
           </Row>
-          <Row>
-            <Col md={6}>
+          <Row className="justify-content-lg-center">
+            <Col md={8}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant='flush'>
@@ -155,7 +156,7 @@ const ProductScreen = ({ history, match }) => {
                   <ListGroup.Item key={review._id}>
                     <strong>{review.name}</strong>
                     <Rating value={review.rating} />
-                    <p>{review.createdAt.substring(1, 10)}</p>
+                    <p><Moment format='MM/DD/YYYY'>{review.createdAt}</Moment></p>
                     <p>{review.comment}</p>
                   </ListGroup.Item>
                 ))}

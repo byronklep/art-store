@@ -11,13 +11,10 @@ const Product = ({ product }) => {
       <Card.Body>
         <Link to={`/product/${product._id}`}>
           <Card.Title as='div'>
-            <strong>{product.title}</strong>
+            <h3>{product.title}</h3>
           </Card.Title>
         </Link>
-
-        <Card.Text as='div'></Card.Text>
-        <Card.Text as='h3'>${product.price}</Card.Text>
-        <Card.Text as='h5'>{product.category}</Card.Text>
+        <Card.Text as='h4'>${product.price}</Card.Text>
       </Card.Body>
     </Card>
   )
