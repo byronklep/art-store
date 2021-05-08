@@ -71,21 +71,12 @@ const ProductScreen = ({ history, match }) => {
           <Row className="justify-content-lg-center">
             <Col md={6}>
               <h1 className="text-center">{product.title}</h1>
-              <Image src={product.image} alt={product.name} fluid />
+              <Image src={product.image} alt={product.title} fluid />
             </Col>
           </Row>
           <Row className="mt-5">
             <Col md={8}>
               <ListGroup variant="flush text-center">
-                {/* {product.subtitle ? (
-                  <ListGroup.Item>
-                    <h5>{product.subtitle}</h5>
-                  </ListGroup.Item>
-                ) : (
-                  ''
-                )} */}
-
-                {/* <ListGroup.Item>{product.category}</ListGroup.Item> */}
                 <ListGroup.Item className='text-left'><h5>Details</h5></ListGroup.Item>
                 <ListGroup.Item>{product.description}</ListGroup.Item>
                 <ListGroup.Item>{product.dimensions}</ListGroup.Item>
