@@ -30,7 +30,7 @@ export default function ScrollToTop() {
       {isVisible && 
         <div className='scroll-up' onClick={scrollToTop}>
           <img className='up-tops-img' height={70} width={70} src='https://static.thenounproject.com/png/607570-200.png' alt='Go to top'/>
-          <span className='my-1'>Scroll Up</span>
+          <span className='my-1'>Top</span>
         </div>}
     </div>
   );
