@@ -14,7 +14,7 @@ const ContactScreen = () => {
               <Form>
                 <Form.Group controlId="formBasicEmail">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Control type="email" placeholder="Email" />
                 </Form.Group>
 
                 <Form.Group controlId="formBasicName">
