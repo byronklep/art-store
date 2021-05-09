@@ -6,7 +6,7 @@ const AboutScreen = () => {
       <Container>
         <Row className="justify-content-lg-center">
           <Col lg={8}>
-            <Jumbotron className="bg-white" fluid>
+            <Jumbotron fluid>
               <Container>
                 <h1>About</h1>
                 <p className="lead">
