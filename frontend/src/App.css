@@ -6,11 +6,15 @@
 
 a {
   color: #03cfbe;
+  text-decoration: none;
 }
 
 a:hover {
   color: rgb(234, 0, 255);
-  text-decoration: none;
+}
+
+.footer-links:hover {
+  color: rgb(234, 0, 255);
 }
 
 .logo {
@@ -18,7 +22,7 @@ a:hover {
   font-size: 1.6rem;
 }
 .logo:hover {
-  color: rgb(234, 0, 255);
+  color: rgb(0, 255, 85);
 }
 
 

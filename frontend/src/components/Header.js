@@ -1,4 +1,3 @@
-import React from 'react'
 import { Route } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
@@ -17,7 +16,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar  bg='primary' variant='light' expand='lg' collapseOnSelect>
+      <Navbar bg='primary' variant='light' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
@@ -66,7 +65,6 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      
     </header>
   )
 }

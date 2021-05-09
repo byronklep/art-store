@@ -1,21 +1,15 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 const Footer = () => {
   return (
-    // <footer className='bg-dark'>
-    //   <Container>
-    //     <Row>
-    //       <Col className='text-center text-light py-3'>Copyright &copy; Art Store</Col>
-    //     </Row>
-    //   </Container>
-    // </footer>
     <section className="">
       <footer className="bg-dark text-white text-center">
-        <div className="container p-4">
-          <div className="row">
-            <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 className="text-uppercase">Art Store</h5>
+        <Container className="container p-4">
+          <Row>
+            <Col md={12} lg={6} className="mb-4 mb-md-0">
+              <span className="logo">
+                <a href="/">Art Store</a>
+              </span>
 
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
@@ -23,70 +17,68 @@ const Footer = () => {
                 corporis vitae repudiandae aliquam voluptatem veniam, est atque
                 cumque eum delectus sint!
               </p>
-            </div>
+            </Col>
 
-            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 className="text-uppercase">Links</h5>
+            <Col md={6} lg={3} className="mb-4 mb-md-0">
+              <h5 className="text-uppercase">Site Map</h5>
 
               <ul className="list-unstyled mb-0">
                 <li>
-                  <a href="#!" className="text-white">
-                    Link 1
+                  <a href="/about" className="footer-links">
+                    About
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
-                    Link 2
+                  <a href="/contact" className="footer-links">
+                    Contact
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
-                    Link 3
+                  <a href="/register" className="footer-links">
+                    Register
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
-                    Link 4
+                  <a href="/login" className="footer-links">
+                    Login
                   </a>
                 </li>
               </ul>
-            </div>
+            </Col>
 
-            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 className="text-uppercase mb-0">Links</h5>
+            <Col md={6} lg={3} className="mb-4 mb-md-0">
+              <h5 className="text-uppercase">Info</h5>
 
               <ul className="list-unstyled">
                 <li>
-                  <a href="#!" className="text-white">
-                    Link 1
+                  Name
+                </li>
+                <li>
+                  <a href="#!" className="footer-links">
+                    Gmail
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
-                    Link 2
+                  <a href="#!" className="footer-links">
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href="#!" className="text-white">
-                    Link 4
+                  <a href="#!" className="footer-links">
+                    Facebook
                   </a>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
 
         <div
           className="text-center p-3"
-          style={{"backgroundColor": "rgba(0, 0, 0, 0.2)"}}>
-          Copyright &copy; 
-          <a className="text-white" href="/">
-          Art Store
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+          Copyright &copy;
+          <a className="text-white ml-2" href="/">
+            Art Store
           </a>
         </div>
       </footer>

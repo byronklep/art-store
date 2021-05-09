@@ -1,6 +1,6 @@
 const products = [
   {
-    title: 'Test Product 1',
+    title: 'Spring Thing',
     medium: 'Acrylic',
     category: 'psychedelic',
     description:
@@ -11,7 +11,7 @@ const products = [
     countInStock: 3,
   },
   {
-    title: 'Test Product 2',
+    title: 'Fuzz',
     medium: 'Acrylic',
     category: 'noveau',
     description:
@@ -22,7 +22,7 @@ const products = [
     countInStock: 4,
   },
   {
-    title: 'Test Product 3',
+    title: 'Echoes of Purple',
     medium: 'Acrylic',
     category: 'comics',
     description:
@@ -33,7 +33,7 @@ const products = [
     countInStock: 2,
   },
   {
-    title: 'Test Product 4',
+    title: 'Beautiful Danger',
     medium: 'Acrylic',
     category: 'space',
     description:
@@ -44,7 +44,7 @@ const products = [
     countInStock: 2,
   },
   {
-    title: 'Test Product 5',
+    title: 'Contrast Settle',
     medium: 'Acrylic',
     category: 'nature',
     description:
@@ -55,7 +55,7 @@ const products = [
     countInStock: 4,
   },
   {
-    title: 'Test Product 6',
+    title: 'In Jest',
     medium: 'Acrylic',
     category: 'abstract',
     description:
