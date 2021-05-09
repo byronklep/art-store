@@ -36,3 +36,9 @@ a:hover {
 .lightbox {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+.product-price {
+margin-top: 20px;
+}
+}

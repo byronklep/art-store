@@ -72,7 +72,7 @@ const ProductScreen = ({ history, match }) => {
           <Row className="justify-content-lg-center">
             <Col md={6}>
               <h1 className="text-center">{product.title}</h1>
-              <hr className='divider' />
+              <hr className='divider mx-auto' />
               <SRLWrapper>
                 <Image className='lightbox' src={product.image} alt={product.title} fluid />
               </SRLWrapper>
@@ -92,7 +92,7 @@ const ProductScreen = ({ history, match }) => {
                 <ListGroup.Item>{product.medium}</ListGroup.Item>
               </ListGroup>
             </Col>
-            <Col>
+            <Col className='product-price'>
               <Card>
                 <ListGroup variant="flush">
                   <ListGroup.Item>
