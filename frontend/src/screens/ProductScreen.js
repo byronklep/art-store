@@ -70,7 +70,7 @@ const ProductScreen = ({ history, match }) => {
         <>
           <Meta title={product.title} />
           <Row className="justify-content-lg-center">
-            <Col md={6}>
+            <Col md={6} className='text-center'>
               <h1 className="text-center">{product.title}</h1>
               <hr className='divider mx-auto' />
               <SRLWrapper>

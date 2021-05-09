@@ -32,6 +32,9 @@ h2 {
     filter: invert(100%);
 }
 
+.up-tops-img {
+  filter: invert(100%);
+}
 
 
 .carousel-caption {
@@ -58,8 +61,14 @@ h2 {
 }
 
 .divider {
-  width: 80px;
-  height: 02px;
-  
+  width: 200px;
+  height: 2px;
   background-color: black;
+}
+
+.scroll-up {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 8px;
 }
